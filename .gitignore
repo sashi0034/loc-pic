@@ -1,0 +1,13 @@
+*.iml
+.gradle/
+.idea/
+.android-sdk/
+.android-sdk-download/
+.android-user-home/
+local.properties
+secrets.yml
+build/
+captures/
+app/build/
+*.jks
+*.keystore
