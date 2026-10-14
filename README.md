@@ -4,16 +4,17 @@
 
 ## セットアップ
 
-1. Android Studioでこのフォルダーを開きます。
-2. Android SDK 37が未導入なら、SDK Managerから `Android SDK Platform 37` と `Android SDK Build-Tools 37.0.0` を導入します。この作業フォルダーでは `.android-sdk` に導入済みです。
-3. `secrets.yml.example` を `secrets.yml` にコピーし、Slackの値を設定します。
+1. Slackの「Create New App」→「From an app manifest」で `slack-app-manifest.yml` の内容を貼り付け、ワークスペースへインストールします。
+2. Android Studioでこのフォルダーを開きます。
+3. Android SDK 37が未導入なら、SDK Managerから `Android SDK Platform 37` と `Android SDK Build-Tools 37.0.0` を導入します。この作業フォルダーでは `.android-sdk` に導入済みです。
+4. `secrets.yml.example` を `secrets.yml` にコピーし、Slackの値を設定します。
 
 ```yaml
 slack_bot_token: "xoxb-your-bot-token"
 slack_channel_id: "C0123456789"
 ```
 
-4. Gradle Sync後、カメラと位置情報を利用できる実機で実行します。
+5. Gradle Sync後、カメラと位置情報を利用できる実機で実行します。
 
 設定前でも撮影できます。その場合は投稿失敗として端末内に保存されるため、設定後に「再送」画面から一括送信できます。
 

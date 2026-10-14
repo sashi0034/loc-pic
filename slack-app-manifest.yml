@@ -1,0 +1,22 @@
+_metadata:
+  major_version: 1
+
+display_information:
+  name: LocPic
+  description: 位置情報とメモを添えて写真を投稿します
+  background_color: "#176B5B"
+
+features:
+  bot_user:
+    display_name: LocPic
+    always_online: false
+
+oauth_config:
+  scopes:
+    bot:
+      - files:write
+
+settings:
+  org_deploy_enabled: false
+  socket_mode_enabled: false
+  token_rotation_enabled: false
